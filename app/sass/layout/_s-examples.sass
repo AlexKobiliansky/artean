@@ -1,0 +1,93 @@
+.s-examples
+  padding-top: 80px
+  .btn-wrap
+    text-align: center
+
+.ex-tabs
+  ul
+    display: block
+    padding-bottom: 20px
+    border-bottom: 1px solid $accent-red
+    line-height: 1
+  li
+    display: inline-block
+    margin-right: 25px
+    position: relative
+    line-height: 1
+    +mt(.5s)
+    color: $accent-red
+    &:before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 3px
+      background-color: $accent-violet
+      opacity: 0
+      +mt(.5s)
+      left: 0
+      bottom: -22px
+    &:hover
+      color: $accent-red
+    &.ui-tabs-active
+      a
+        color: $accent-violet
+      &:before
+        opacity: 1
+
+.ex-wrap
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  padding: 20px 0
+
+
+.ex-item
+  width: calc(33.333333% - 8px)
+  +bg-cover
+  height: 300px
+  position: relative
+  margin-bottom: 8px
+  cursor: pointer
+  &-link
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    z-index: 2
+    padding: 50px 30px
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    color: #fff
+    +mt(.3s)
+    transform: scale(.9)
+    opacity: 0
+    &:hover, &:active, &:focus
+      color: #fff
+    &:before
+      z-index: 0
+      content: ''
+      position: absolute
+      left: 0
+      right: 0
+      top: 0
+      bottom: 0
+      background-image: linear-gradient(to right,#e73652 0%,#643588 59%,#643588 100%)
+      opacity: .9
+  &-name
+    position: relative
+    z-index: 2
+    font-size: 30px
+    font-family: "GothamPro", sans-serif
+    font-weight: 700
+    line-height: 1
+    display: inline-block
+    margin-bottom: 30px
+  &-desc
+    position: relative
+    z-index: 2
+  &:hover
+    .ex-item-link
+      transform: none
+      opacity: 1

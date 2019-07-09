@@ -41,6 +41,7 @@ gulp.task('scripts', function() {
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/mmenu/mmenu.js',
 		'app/libs/magnificPopup/jquery.magnific-popup.min.js',
+		'app/libs/tabs/jquery-ui.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

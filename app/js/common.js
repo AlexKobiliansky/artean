@@ -85,16 +85,11 @@ $(document).ready(function(){
         });
     };
 
-
-
-
     onPlayerStateChange = function (event) {
         if (event.data == YT.PlayerState.ENDED) {
             $.magnificPopup.close();
         }
     };
-
-
 
     $(function () {
         $("a[href='#video-popup']").magnificPopup({
@@ -115,12 +110,6 @@ $(document).ready(function(){
             }
         })
     });
-
-
-
-
-
-
     /**
      * end VIDEO
      */
@@ -158,6 +147,7 @@ $(document).ready(function(){
         }, 'xml');
     });
 
+    $( "#ex-tabs" ).tabs();
 
     //E-mail Ajax Send
     $("form").submit(function() { //Change
