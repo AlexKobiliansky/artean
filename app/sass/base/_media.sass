@@ -6,14 +6,72 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .main-head
+    .container
+      max-width: 100%
+
+  #mmenu-btn
+    position: relative
+    left: auto
+    top: 6px
+
+  .header-line
+    justify-content: space-around
+
 // ≥992px
 +media-breakpoint-down(md)
 
+  .s-intro
+    height: auto
+
+  .intro-wrap
+    flex-direction: column
+
+  .intro-part
+    min-height: 400px
+    width: 100%
+    &-box
+      background-position: center center
+      position: relative
+      &:after
+        content: ''
+        position: absolute
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        background-color: rgba($text, .5)
+        z-index: 2
+      h1
+        z-index: 3
+        top: 150px
+        a
+          font-size: 30px
+
+  .intro-right .intro-part-box h1
+    left: 0
+    text-align: right
+
+  .intro-arrows
+    display: none
+
+
+  .main-mnu
+    display: none
+
 // ≥768px
 +media-breakpoint-down(sm)
+  .intro-part
+    h1
+      a
+        font-size: 24px
 
 // ≥480px
 +media-breakpoint-down(xs)
+  .head-recall
+    display: none
+  .header-line
+    justify-content: space-between
 
 
 /*==========  Mobile First  ==========*/

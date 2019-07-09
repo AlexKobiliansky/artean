@@ -1,0 +1,95 @@
+.s-intro
+  height: 100vh
+  background-color: $accent-violet
+  position: relative
+  min-height: 680px
+
+.intro-arrows
+  position: absolute
+  width: 82px
+  height: 20px
+  background-image: url('../img/resize-arr.png')
+  top: 190px
+  left: calc(50% - 41px)
+  z-index: 3
+
+.btn-down
+  width: 18px
+  height: 28px
+  position: absolute
+  bottom: 10px
+  left: calc(50% - 9px)
+  z-index: 10
+  img
+    display: block
+    margin: -1px auto
+    &:nth-last-of-type(3)
+      animation: blink 1.5s infinite
+    &:nth-last-of-type(2)
+      animation: blink 1.5s .2s infinite
+    &:nth-last-of-type(1)
+      animation: blink 1.5s .4s infinite
+
+
+@keyframes blink
+  0%
+    opacity: 1
+  50%
+    opacity: 0
+  100%
+    opacity: 1
+
+
+.intro-wrap
+  height: 100%
+  display: flex
+  justify-content: space-between
+  align-items: stretch
+
+.intro-part
+  width: 50%
+  height: 100%
+  overflow: hidden
+  position: relative
+  z-index: 2
+  &-content
+    left: 0
+    width: 100vw
+    height: 100%
+    position: absolute
+    top: 0
+    z-index: 2
+  &-box
+    background-position: center 0
+    height: 100%
+    background-size: cover
+    h1
+      position: relative
+      top: 190px
+      a
+        color: #fff
+        font-family: "GothamPro", sans-serif
+        font-weight: 700
+        font-size: 36px
+        line-height: 1
+
+
+.intro-left
+  h1
+    width: 280px
+
+.intro-right
+  .intro-part-content
+    right: 0
+    left: auto
+    z-index: 1
+  .intro-part-box
+    background-image: url('../img/bg-intro-right.jpg')
+    h1
+      position: relative
+      left: 68%
+
+.intro-left
+  .intro-part-box
+    background-image: url('../img/bg-intro-left.jpg')
+

@@ -1,0 +1,98 @@
+.main-head
+  position: fixed
+  width: 100%
+  padding: 12px 0 10px
+  border-bottom: 1px solid transparent
+  z-index: 100
+  .hamburger.is-active
+    .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+      background-color: #fff
+
+.head-logo
+  position: relative
+  display: block
+  width: 65px
+  .logo-colored
+    position: absolute
+    top: 0
+    left: 0
+    opacity: 0
+    +mt(.3s)
+  .logo-white
+    opacity: 1
+    +mt(.3s)
+
+.header-line
+  display: flex
+  justify-content: space-between
+  align-items: center
+  position: relative
+
+.main-mnu
+  li
+    display: inline-block
+    margin-right: 15px
+    &:last-child
+      margin-right: 0
+    a
+      color: #fff
+      display: inline-block
+      position: relative
+      &:after
+        content: ''
+        position: absolute
+        height: 2px
+        width: 0
+        background-color: #fff
+        left: 0
+        bottom: -6px
+        +mt(.3s)
+      &:hover
+        &:after
+          width: 100%
+    &.active
+      a
+        &:after
+          width: 100%
+
+.head-recall
+  .btn
+    margin-left: 20px
+  .phone
+    position: relative
+    top: 1px
+    font-size: 16px
+    color: #fff
+    +mt(.3s)
+
+
+.mmenu-btn
+  position: absolute
+  left: -90px
+  top: 15px
+  .hamburger-box
+    width: 30px
+
+.hamburger:hover
+  opacity: 1
+
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+  width: 30px
+  height: 2px
+  background-color: #fff
+  &:hover
+    color: #fff
+
+
+//mmenu
+.mm-panel
+  overflow: visible
+  .header-line
+    padding: 12px 0 10px
+  .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+    background-color: $accent-violet
+  .mmenu-btn
+    top: 27px
+  .logo-colored
+    opacity: 1
+

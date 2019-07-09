@@ -63,4 +63,25 @@ ul
   display: none!important
 // ======= END TEMPLATE STYLES =======
 
+.btn
+  display: inline-block
+  +mt(.3s)
+  cursor: pointer
+  text-transform: uppercase
+  white-space: nowrap
+  line-height: 1
+  font-size: 12px
+  border-width: 2px
+  border-style: solid
+  padding: 11px 17px
 
+.btn-white
+  color: #fff
+  border-color: #fff
+  background-color: transparent
+  &:hover, &:active, &:focus
+    color: $accent-red
+    background-color: #fff
+
+.t-white
+  color: #fff
