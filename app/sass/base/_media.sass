@@ -21,6 +21,9 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .service-item
+    width: calc(50% - 20px)
+
   .video-player, .you-player
     height: 500px
 
@@ -99,6 +102,15 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-services
+    .btn-wrap
+      margin-top: 0
+
+  .service-item
+    width: 100%
+    &:first-child
+      justify-content: center
 
   .video-player, .you-player
     height: 250px
