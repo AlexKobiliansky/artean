@@ -21,6 +21,21 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .video-player, .you-player
+    height: 500px
+
+  .video-right
+    margin-bottom: 50px
+
+  .video-left
+    &:before
+      left: 0
+    img
+      left: 70px
+    .btn-play
+      left: 105px
+
+
   .s-intro
     height: auto
 
@@ -61,6 +76,22 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+  .s-video
+    background-image: url('../img/bg-video-mob.png')
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center bottom
+
+  .video-left
+    height: 450px
+    &:before
+      display: none
+
+  .video-right
+    padding-top: 0
+    padding-left: 0
+
   .intro-part
     h1
       a
@@ -68,6 +99,42 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .video-player, .you-player
+    height: 250px
+    background-color: #000
+
+  .head-logo
+    margin-left: 15px
+
+  .s-video
+    background-image: none
+    .btn-wrap
+      text-align: center
+
+  .section-title
+    font-size: 26px
+
+  .video-right
+    padding-left: 0
+
+  .video-left
+    height: auto
+    img
+      left: 0
+      display: block
+      margin-left: auto
+      margin-right: auto
+    .btn-play
+      left: 0
+      display: block
+      margin-left: auto
+      margin-right: auto
+      top: 25px
+      .svg
+        fill: $accent-violet
+
+
   .head-recall
     display: none
   .header-line

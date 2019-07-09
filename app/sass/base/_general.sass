@@ -83,5 +83,49 @@ ul
     color: $accent-red
     background-color: #fff
 
+.btn-red
+  border-color: $accent-red
+  color: $accent-red
+  background-color: transparent
+  &:hover, &:active, &:focus
+    background-color: $accent-red
+    color: #fff
+
 .t-white
   color: #fff
+
+.section-title
+  font-size: 36px
+  font-weight: 700
+  color: $accent-violet
+  font-family: "GothamPro", sans-serif
+  margin-bottom: 30px
+  line-height: 1
+
+
+//MY_MFP_ZOOM_IN
+.my-mfp-zoom-in
+  .zoom-anim-dialog, .popup-form, .video-popup
+    opacity: 0
+    transition: all 0.5s ease-in-out
+    transform: scale(0.7)
+  &.mfp-ready .zoom-anim-dialog, &.mfp-ready .popup-form, &.mfp-ready .video-popup
+    opacity: 1
+    transform: scale(1)
+  &.mfp-removing .zoom-anim-dialog, &.mfp-removing .popup-form, &.mfp-removing .video-popup
+    transform: scale(0.7)
+    opacity: 0
+  &.mfp-bg
+    opacity: 0
+    transition: opacity 0.5s ease-out
+  &.mfp-ready.mfp-bg
+    opacity: .9
+  &.mfp-removing.mfp-bg
+    opacity: 0
+
+.mfp-close-btn-in .mfp-close
+  color: #fff
+  right: -11px
+  top: -45px
+
+  font-size: 40px

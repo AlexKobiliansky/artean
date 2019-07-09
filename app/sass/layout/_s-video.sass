@@ -1,0 +1,52 @@
+.s-video
+  padding: 80px 0
+  .btn
+    margin-top: 20px
+
+.video-left
+  position: relative
+  height: 500px
+  &:before
+    content: ''
+    position: absolute
+    width: 593px
+    height: 419px
+    background-image: url('../img/bg-video.png')
+    +bg-cover
+    z-index: 0
+    left: -115px
+    top: 20px
+  img
+    position: relative
+    z-index: 2
+    display: inline-block
+    left: -25px
+  .btn-play
+    display: inline-block
+    width: 69px
+    height: 69px
+    cursor: pointer
+    position: relative
+    z-index: 2
+    top: 100px
+    left: 20px
+    .svg
+      fill: #fefefe
+      +mt(.3s)
+    &:hover
+      .svg
+        fill: #ccc
+
+.video-right
+  padding-left: 80px
+  padding-top: 90px
+
+.video-popup
+  max-width: 1000px
+  position: relative
+  margin-left: auto
+  margin-right: auto
+
+.video-player, .you-player
+  width: 100%
+  height: 600px
