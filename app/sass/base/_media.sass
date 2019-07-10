@@ -21,6 +21,13 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .main-foot
+    .form-content
+      flex-wrap: wrap
+      .btn-wrap
+        width: 100%
+
+
   .s-prefooter
     .contacts-block
       padding-left: 0
@@ -131,6 +138,22 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+  .main-foot
+    .form-content
+      label
+        width: 100%
+      .privacy
+        width: 100%
+        text-align: center
+        margin-bottom: 30px
+
+  .bottom-line
+    flex-wrap: wrap
+    .bl-item
+      width: 100%
+      margin-bottom: 15px
+      text-align: center
 
   .s-video
     background-image: url('../img/bg-video-mob.png')

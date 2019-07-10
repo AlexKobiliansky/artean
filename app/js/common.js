@@ -180,12 +180,11 @@ $(document).ready(function(){
             var placeholder = selectedItem.data('ph');
             var input = th.find('.jq-selectbox__select');
             var form = th.parents('.contact-form');
-            var dataInput = form.find('#data-input');
+            var dataInput = form.find('.data-input');
 
             dataInput.attr("placeholder", placeholder);
 
             input.cssBefore('background-image', 'url("'+ icon +'")');
-            console.log('url("'+ icon +'")');
         });
     }
 
