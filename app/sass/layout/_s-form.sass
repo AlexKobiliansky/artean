@@ -15,9 +15,9 @@
 
 .contacts-select
   .jq-selectbox__dropdown
-    margin-top: 12px
+    margin-top: 0
     left: 0
-    width: calc(100% + 10px)
+    width: 100%
     li
       position: relative
       padding: 12px 10px 12px 40px
@@ -47,13 +47,14 @@
 
   .jq-selectbox__select
     position: relative
+    padding: 12px 0
     &:before
       content: ''
       position: absolute
       width: 19px
       height: 19px
-      left: 0
-      top: -3px
+      left: 10px
+      top: 10px
       z-index: 2
       background-image: url('../img/icons/c-phone-icon.png')
       +bg-cover
@@ -73,7 +74,7 @@
   input, select
     width: 100%
   input
-    padding: 12px 10px
+    padding: 0 10px 12px 10px
     border: none
     border-bottom: 1px solid #e8e8e8
     margin-bottom: 25px
@@ -97,7 +98,7 @@
   .contacts-select
     cursor: pointer
     width: 100%
-    padding: 12px 10px
+    //padding: 12px 10px
     border-bottom: 1px solid #e8e8e8
     line-height: 1
     margin-bottom: 10px
@@ -108,7 +109,7 @@
       box-shadow: none
       line-height: 1
     .jq-selectbox__select-text
-      padding-left: 20px
+      padding-left: 40px
     .jq-selectbox__trigger
       border-left: none
     .jq-selectbox__trigger-arrow
@@ -118,8 +119,8 @@
       height: 7px
       background-image: url('../img/icons/sel-arrow.png')
       +bg-cover
-      top: 6px
-      right: 0
+      top: 17px
+      right: 10px
     &.opened
       .jq-selectbox__trigger-arrow
         transform: rotate(180deg)
