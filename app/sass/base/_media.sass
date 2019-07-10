@@ -5,6 +5,10 @@
 
 
 @media screen and (max-width: 1400px)
+
+  .intro-case-img
+    top: 130px 
+
   .mobile-left
     &-wrap
       top: 140px
@@ -20,6 +24,10 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .s-intro-case
+    height: 790px
+    min-height: auto
 
   .mm-panel
     .header-line
@@ -47,6 +55,22 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .s-intro-case
+    height: auto
+    padding-bottom: 30px
+    text-align: center
+    h1
+      margin-top: 150px
+    .container, .row, .col-lg-4
+      height: auto
+
+  .intro-case-img
+    position: relative
+    right: 0
+    top: 0
+    .preview
+      left: 190px
 
   .mm-panel
     .header-line
@@ -185,6 +209,24 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .intro-case-img
+    display: none
+
+  .intro-case-mon
+    display: block
+    position: relative
+    margin-top: 30px
+    img
+      margin-left: auto
+      margin-right: auto
+    .preview
+      width: 445px
+      height: 270px
+      position: absolute
+      left: 41px
+      top: 14px
+
+
   .popup-form
     background-image: none
     height: auto
@@ -229,8 +271,23 @@
       a
         font-size: 24px
 
+@media screen and (max-width: 580px)
+  .intro-case-mon
+    img
+      width: 280px
+    .preview
+      width: 266px
+      height: 162px
+      top: 8px
+      left: calc(50% - 133px)
+
+
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-intro-case
+    h1
+      font-size: 32px
 
   .s-prefooter
     padding: 60px 0 20px
