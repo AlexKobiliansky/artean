@@ -45,6 +45,7 @@ gulp.task('scripts', function() {
 		'app/libs/jquery-form-validator/form-validator/jquery.form-validator.min.js',
 		'app/libs/form-styler/jquery.formstyler.min.js',
 		'app/libs/cssBefore/cssBefore.js',
+		'app/libs/equalHeights/jquery.equalheights.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

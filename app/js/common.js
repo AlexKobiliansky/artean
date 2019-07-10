@@ -150,6 +150,17 @@ $(document).ready(function(){
     $( "#ex-tabs" ).tabs();
 
 
+    function heightses() {
+        if ($(window).width()>992) {
+            $('.blog-item-title').height('auto').equalHeights();
+        }
+    }
+
+    $(window).resize(function() {
+        heightses();
+    });
+    heightses();
+
     /**
      * FROMS
      */

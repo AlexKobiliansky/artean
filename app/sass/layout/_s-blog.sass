@@ -1,0 +1,55 @@
+.s-blog
+  padding: 80px 0
+  .btn-wrap
+    text-align: center
+    margin-top: 30px
+
+.blog-items-wrap
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+.blog-item
+  background-color: #fff
+  box-shadow: 0 0 9px rgba(100,53,136,.09)
+  padding: 40px 30px 60px
+  border: 1px solid #e8e8e8
+  position: relative
+  width: calc(33.33333% - 30px)
+  margin-bottom: 30px
+  &:after
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 20px
+    z-index: 1
+    background-image: linear-gradient(to right,#e73652 0%,#643588 100%)
+  &-title
+    font-weight: 600
+    color: $accent-red
+    margin-bottom: 25px
+  &-desc
+    font-size: 14px
+    height: 136px
+    overflow: hidden
+    margin-bottom: 25px
+    p
+      margin-bottom: 0
+  &-bottom
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-date
+    font-size: 12px
+    color: $accent-grey
+  &-link
+    .svg
+      width: 18px
+      height: 12px
+      fill: $accent-violet
+      +mt(.3s)
+    &:hover
+      .svg
+        fill: $accent-red
