@@ -4,9 +4,31 @@
   padding: 12px 0 10px
   border-bottom: 1px solid transparent
   z-index: 100
+  +mt(.3s)
+  background-color: transparent
   .hamburger.is-active
     .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
       background-color: #fff
+  &.sticky
+    background-color: #fff
+    border-color: #e8e8e8
+    .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+      background-color: $accent-violet
+    .head-logo .logo-colored
+      opacity: 1
+    .main-mnu
+      li
+        a
+          color: $text
+          &:after
+            background-color: $accent-violet
+        &.active
+          a
+            color: $accent-violet
+    .head-recall
+      .phone
+        color: $text
+
 
 .head-logo
   position: relative
@@ -87,12 +109,99 @@
 //mmenu
 .mm-panel
   overflow: visible
-  .header-line
-    padding: 12px 0 10px
   .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
-    background-color: $accent-violet
+    background-color: $accent-violet!important
   .mmenu-btn
     top: 27px
   .logo-colored
     opacity: 1
+
+.mobile-left
+  background-color: #fff
+  height: 100vh
+  width: 50%
+  display: inline-block
+  font-size: 36px
+  vertical-align: top
+  position: relative
+  &-wrap
+    width: 370px
+    position: absolute
+    top: 150px
+    right: 0
+    height: calc(100% - 150px)!important
+  ul
+    font-family: "GothamPro", sans-serif
+    font-weight: 700
+    li
+      line-height: 1
+      margin-bottom: 30px
+      position: relative
+      a
+        display: inline-block
+        position: relative
+        color: $text
+        +mt(.3s)
+        &:after
+          content: ''
+          position: absolute
+          width: 0
+          height: 4px
+          background-color: $accent-violet
+          +mt(.3s)
+          left: 0
+          bottom: -6px
+        &:hover
+          color: $accent-violet
+          &:after
+            width: 100%
+      &.active
+        a
+          color: $accent-violet
+          &:after
+            width: 100%
+  .socials-block
+    position: absolute
+    left: 0
+    bottom: 40px
+
+.mobile-right
+  height: 100vh
+  display: inline-block
+  width: 50%
+  position: relative
+  background-image: linear-gradient(to top,#e73652 0%,#643588 68%,#643588 100%)
+  font-size: 14px
+  &-wrap
+    width: 280px
+    padding-top: 100px
+    margin-left: 95px
+    color: #fff
+  .contact-form
+    background-color: transparent
+    padding: 0
+    margin-top: 25px
+    h3
+      color: #fff
+    input, select
+      background-color: transparent
+      border-color: #fff
+      color: #fff
+      &::placeholder
+        color: #fff
+    .contacts-select .jq-selectbox__select
+      background-color: transparent
+      text-shadow: none
+    .contacts-select .jq-selectbox__select-text
+      color: #fff
+    .jq-selectbox__dropdown
+      margin-top: 28px
+      border-radius: 0
+    .privacy
+      color: #fff
+
+
+.mobile-mnu-wrapper
+  display: flex
+  font-size: 0
 

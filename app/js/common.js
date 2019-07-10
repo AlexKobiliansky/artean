@@ -1,5 +1,25 @@
 $(document).ready(function(){
 
+    /**
+     * STICKY NAV
+     */
+    $(window).scroll(function(){
+        sticky_nav();
+    });
+    sticky_nav();
+
+    function sticky_nav() {
+        if($(this).scrollTop() > 30) {
+            $('.main-head').addClass('sticky');
+            $('.head-recall .btn').removeClass('btn-white').addClass('btn-red');
+        } else {
+            $('.main-head').removeClass('sticky');
+            $('.head-recall .btn').addClass('btn-white').removeClass('btn-red');
+        }
+    }
+    /**
+     * end STICKY NAV
+     */
 
     /**
      * mobile-mnu customization
@@ -175,20 +195,17 @@ $(document).ready(function(){
     });
     heightses();
 
+    $("a.btn-down").mPageScroll2id();
+
     /**
      * FROMS
      */
-
     $.validate({
         form : '.contact-form',
         scrollToTopOnError: false
     });
 
-    // setTimeout(function() {
         $('.contacts-select').styler();
-    // }, 100)
-
-
 
     function getSelectIcon(){
         $('.jq-selectbox.contacts-select').each(function(){
@@ -216,17 +233,6 @@ $(document).ready(function(){
         getSelectIcon();
     });
 
-
-
-
-    // $('.jq-selectbox__dropdown li').each(function(){
-    //     var th = $(this),
-    //         icon = th.data('icon');
-    //
-    //     console.log(icon);
-    // });
-
-
     //E-mail Ajax Send
     $("form").submit(function() { //Change
         var th = $(this);
@@ -240,4 +246,11 @@ $(document).ready(function(){
         });
         return false;
     });
+    /**
+     * end FORMS
+     */
+
+    $('.preloader').fadeOut();
+
+
 });

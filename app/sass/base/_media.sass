@@ -3,8 +3,35 @@
 
 /*==========  Desktop First  ==========*/
 
+
+@media screen and (max-width: 1400px)
+  .mobile-left
+    &-wrap
+      top: 140px
+      font-size: 28px
+    ul
+      li
+        margin-bottom: 20px
+
+  .mobile-right
+    &-wrap
+      padding-top: 50px
+
+
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .mm-panel
+    .header-line
+      justify-content: flex-start
+      .head-logo
+        left: 30px
+      .mmenu-btn
+        left: auto
+        right: 15px
+        top: 15px
+        .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+          background-color: #fff!important
 
   .main-head
     .container
@@ -20,6 +47,25 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .mm-panel
+    .header-line
+      .mmenu-btn
+        .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+          background-color: $accent-violet!important
+
+
+  .mobile-right
+    display: none
+  .mobile-left
+    width: 100%
+    &-wrap
+      width: 100%
+      left: 0
+      text-align: center
+    .socials-block
+      bottom: 15px
+      left: 30px
 
   .main-foot
     .form-content
