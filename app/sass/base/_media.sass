@@ -7,7 +7,7 @@
 @media screen and (max-width: 1400px)
 
   .intro-case-img
-    top: 130px 
+    top: 130px
 
   .mobile-left
     &-wrap
@@ -55,6 +55,12 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .numbers-wrap
+    flex-wrap: wrap
+
+  .number-item
+    width: 50%
 
   .s-intro-case
     height: auto
@@ -284,6 +290,10 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .number-item
+    width: 100%
+    text-align: center
 
   .s-intro-case
     h1
