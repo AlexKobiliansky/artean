@@ -149,6 +149,52 @@ $(document).ready(function(){
 
     $( "#ex-tabs" ).tabs();
 
+
+    /**
+     * FROMS
+     */
+
+    $.validate({
+        form : '.contact-form',
+        scrollToTopOnError: false
+    });
+
+    $('.contacts-select').styler();
+
+    function getSelectIcon(){
+        $('.jq-selectbox.contacts-select').each(function(){
+            var th = $(this);
+            var selectedItem = th.find('li.selected');
+            var icon = selectedItem.data('icon');
+            var placeholder = selectedItem.data('ph');
+            var input = th.find('.jq-selectbox__select');
+            var form = th.parents('.contact-form');
+            var dataInput = form.find('#data-input');
+
+            dataInput.attr("placeholder", placeholder);
+
+            input.cssBefore('background-image', 'url("'+ icon +'")');
+            console.log('url("'+ icon +'")');
+        });
+    }
+
+    getSelectIcon();
+
+    $('.jq-selectbox.contacts-select').change(function(){
+        getSelectIcon();
+    });
+
+
+
+
+    // $('.jq-selectbox__dropdown li').each(function(){
+    //     var th = $(this),
+    //         icon = th.data('icon');
+    //
+    //     console.log(icon);
+    // });
+
+
     //E-mail Ajax Send
     $("form").submit(function() { //Change
         var th = $(this);

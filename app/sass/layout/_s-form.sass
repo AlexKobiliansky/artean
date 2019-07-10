@@ -1,0 +1,152 @@
+.s-form
+  padding: 80px 0
+
+.form-left
+  height: 455px
+  background-image: url('../img/bg-form-left.png')
+  background-size: contain
+  background-position: left center
+  background-repeat: no-repeat
+  padding-top: 180px
+  padding-left: 60px
+  .section-title
+    color: #fff
+
+
+.contacts-select
+  .jq-selectbox__dropdown
+    margin-top: 12px
+    left: 0
+    width: calc(100% + 10px)
+    li
+      position: relative
+      padding: 12px 10px 12px 40px
+      &:before
+        position: absolute
+        width: 19px
+        height: 19px
+        left: 10px
+        top: 12px
+        +bg-cover
+      &.c-phone:before
+        content: url('../img/icons/c-phone-icon.png')
+      &.c-vk:before
+        content: url('../img/icons/c-vk-icon.png')
+      &.c-email:before
+        content: url('../img/icons/c-email-icon.png')
+      &.c-skype:before
+        content: url('../img/icons/c-skype-icon.png')
+      &.c-whats:before
+        content: url('../img/icons/c-whats-icon.png')
+      &.c-viber:before
+        content: url('../img/icons/c-viber-icon.png')
+      &.c-tg:before
+        content: url('../img/icons/c-tg-icon.png')
+      &.selected
+        background-color: #08c
+
+  .jq-selectbox__select
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      width: 19px
+      height: 19px
+      left: 0
+      top: -3px
+      z-index: 2
+      background-image: url('../img/icons/c-phone-icon.png')
+      +bg-cover
+
+.contact-form
+  background-color: #fff
+  z-index: 2
+  padding: 35px
+  h3
+    font-size: 16px
+    font-weight: 600
+    color: $accent-violet
+    line-height: 1.3
+    margin-bottom: 25px
+  label
+    display: block
+  input, select
+    width: 100%
+  input
+    padding: 12px 10px
+    border: none
+    border-bottom: 1px solid #e8e8e8
+    margin-bottom: 25px
+    &::placeholder
+      color: $text
+    &.error
+      border-color: red!important
+      color: red
+      &::placeholder
+        color: red
+  .privacy
+    font-size: 12px
+    line-height: 1.4
+    color: $accent-grey
+  .btn-wrap
+    text-align: center
+    margin-top: 25px
+  .help-block
+    display: none
+
+  .contacts-select
+    cursor: pointer
+    width: 100%
+    padding: 12px 10px
+    border-bottom: 1px solid #e8e8e8
+    line-height: 1
+    margin-bottom: 10px
+    .jq-selectbox__select
+      height: auto
+      background: #fff
+      border: none
+      box-shadow: none
+      line-height: 1
+    .jq-selectbox__select-text
+      padding-left: 20px
+    .jq-selectbox__trigger
+      border-left: none
+    .jq-selectbox__trigger-arrow
+      border: none
+      //background-color: green
+      width: 12px
+      height: 7px
+      background-image: url('../img/icons/sel-arrow.png')
+      +bg-cover
+      top: 6px
+      right: 0
+    &.opened
+      .jq-selectbox__trigger-arrow
+        transform: rotate(180deg)
+
+
+form.bg-gradient
+  margin: 20px
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    width: calc(100% + 40px)
+    height: calc(100% + 40px)
+    background-image: linear-gradient(-238deg,#e73652 0%,#e73652 18%,#643588 72%,#643588 100%)
+    left: -20px
+    top: -20px
+    z-index: -2
+  &:after
+    position: absolute
+    content: ''
+    left: 0
+    right: 0
+    bottom: 0
+    top: 0
+    z-index: 0
+    background-color: #fff
+  .form-content
+    position: relative
+    z-index: 1
+
