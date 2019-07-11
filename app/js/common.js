@@ -270,48 +270,51 @@ $(document).ready(function(){
 
     $('.preloader').fadeOut();
 
+    if ($('#map').length) {
+        ymaps.ready(function(){
+            var mapId = $('#map'),
+                attitude = mapId.data("att"),
+                longtitude = mapId.data("long"),
+                zoom = mapId.data("zoom"),
+                marker = mapId.data("marker"),
+                map = new ymaps.Map("map", {
+                    center: [attitude, longtitude],
+                    controls: ['zoomControl'],
+                    zoom: zoom
+                }),
 
-    ymaps.ready(function(){
-        var mapId = $('#map'),
-            attitude = mapId.data("att"),
-            longtitude = mapId.data("long"),
-            zoom = mapId.data("zoom"),
-            marker = mapId.data("marker"),
-            map = new ymaps.Map("map", {
-                center: [attitude, longtitude],
-                controls: ['zoomControl'],
-                zoom: zoom
-            }),
+                myPlacemark = new ymaps.Placemark(map.getCenter(), {}, {
+                    // Опции.
+                    // Необходимо указать данный тип макета.
+                    iconLayout: 'default#image',
+                    // Своё изображение иконки метки.
+                    iconImageHref: marker,
+                    // Размеры метки.
+                    iconImageSize: [36, 51],
+                });
 
-            myPlacemark = new ymaps.Placemark(map.getCenter(), {}, {
-                // Опции.
-                // Необходимо указать данный тип макета.
-                iconLayout: 'default#image',
-                // Своё изображение иконки метки.
-                iconImageHref: marker,
-                // Размеры метки.
-                iconImageSize: [36, 51],
-            });
+            map.geoObjects.add(myPlacemark);
+            map.behaviors.disable('scrollZoom');
 
-        map.geoObjects.add(myPlacemark);
-        map.behaviors.disable('scrollZoom');
+            var position = map.getGlobalPixelCenter();
 
-        var position = map.getGlobalPixelCenter();
+            map.setGlobalPixelCenter([ position[0] + 350, position[1] ]);
 
-        map.setGlobalPixelCenter([ position[0] + 350, position[1] ]);
+            if ($(window).width() < 992) {
+                map.setGlobalPixelCenter([ position[0] + 250, position[1]]);
+            }
 
-        if ($(window).width() < 992) {
-            map.setGlobalPixelCenter([ position[0] + 250, position[1]]);
-        }
+            if ($(window).width() < 768) {
+                map.setGlobalPixelCenter([ position[0], position[1]]);
+            }
 
-        if ($(window).width() < 768) {
-            map.setGlobalPixelCenter([ position[0], position[1]]);
-        }
+            if ($(window).width() <= 480) {
+                map.behaviors.disable('drag');
+            }
+        });
+    }
 
-        if ($(window).width() <= 480) {
-            map.behaviors.disable('drag');
-        }
-    });
+
 
 
 });
