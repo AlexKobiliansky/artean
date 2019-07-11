@@ -1,0 +1,44 @@
+.s-intro-service
+  position: relative
+
+.service-slide
+  height: 100vh
+  min-height: 680px
+  +bg-cover
+  display: flex
+  align-items: center
+  color: #fff
+  font-family: "GothamPro", sans-serif
+  h1
+    font-weight: 700
+    font-size: 40px
+    line-height: 1
+    margin-bottom: 20px
+  h2
+    font-weight: 300
+    font-size: 24px
+    line-height: 1.2
+
+.service-slider
+  position: relative
+  .owl-nav
+    position: absolute
+    width: 100%
+    left: 0
+    top: calc(50% - 24px)
+    button.owl-prev, button.owl-next
+      position: absolute
+      width: 27px
+      height: 48px
+      +bg-cover
+      background-image: url('../img/icons/serv-sl-arr.png')
+      cursor: pointer
+      +mt(.3s)
+      opacity: .2
+      &:hover
+        opacity: 1
+    button.owl-prev
+      left: 40px
+      transform: rotate(180deg)
+    button.owl-next
+      right: 40px

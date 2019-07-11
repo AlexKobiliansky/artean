@@ -215,6 +215,25 @@ $(document).ready(function(){
     });
 
     /**
+     * SLIDERS
+     */
+    $('.service-slider').owlCarousel({
+        loop: true,
+        items: 1,
+        margin: 0,
+        nav: true,
+        animateOut: 'fadeOut',
+        navText: ['', ''],
+        dots: false,
+        mouseDrag: false,
+        touchDrag: false
+    });
+
+    /**
+     * end SLIDERS
+     */
+
+    /**
      * FROMS
      */
     $.validate({
