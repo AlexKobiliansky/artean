@@ -149,6 +149,8 @@ $(document).ready(function(){
     });
 
 
+
+
     $('img.svg').each(function(){
         var $img = jQuery(this);
         var imgID = $img.attr('id');
@@ -181,7 +183,19 @@ $(document).ready(function(){
         }, 'xml');
     });
 
+    $('.color-item').each(function(){
+        var th = $(this),
+            color = th.data('color');
+
+        console.log(color);
+
+        th.css("fill",color);
+    });
+
     $( "#ex-tabs" ).tabs();
+
+    $('.result-img').photoswipe();
+    $('.inner-pages').photoswipe();
 
 
     function heightses() {
@@ -249,6 +263,8 @@ $(document).ready(function(){
     /**
      * end FORMS
      */
+
+
 
     $('.preloader').fadeOut();
 

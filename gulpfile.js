@@ -47,6 +47,9 @@ gulp.task('scripts', function() {
 		'app/libs/cssBefore/cssBefore.js',
 		'app/libs/equalHeights/jquery.equalheights.min.js',
 		'app/libs/page-scroll-to-id/jquery.malihu.PageScroll2id.js',
+		'app/libs/photoswipe/photoswipe.min.js',
+		'app/libs/photoswipe/photoswipe-ui-default.min.js',
+		'app/libs/photoswipe/jquery.photoswipe.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
