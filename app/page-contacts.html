@@ -24,6 +24,16 @@
 
     <link rel="stylesheet" href="css/main.min.css">
 
+    <!-- only for page-contacts.html -->
+    <style>
+        [class*="ymaps-2"][class*="-ground-pane"] {
+            filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+            -webkit-filter: grayscale(100%);
+        }
+    </style>
+    <!-- /only for page-contacts.html -->
+
+
 </head>
 
 <body>
@@ -222,186 +232,144 @@
     </header>
     <!-- ======= HEADER END ======= -->
 
-    <!-- ======= SECTION INTRO-CASES START ======= -->
-    <section class="s-intro-cases">
+    <!-- ======= SECTION INTRO-CONTACTS START ======= -->
+    <section class="s-intro-contacts">
         <a href="#next-section" class="btn-down">
             <img src="img/btn-down-arr.png" alt="Вниз">
             <img src="img/btn-down-arr.png" alt="Вниз">
             <img src="img/btn-down-arr.png" alt="Вниз">
         </a>
         <div class="container">
-            <h1>Кейсы</h1>
+            <h1>Контакты</h1>
         </div>
     </section>
-    <!-- ======= SECTION INTRO-CASES END ======= -->
+    <!-- ======= SECTION INTRO-CONTACTS END ======= -->
 
-    <!-- ======= SECTION EXAMPLES START ======= -->
-    <section class="s-examples">
-        <div class="container">
-            <h2 class="section-title">Кейсы</h2>
+    <!-- ======= SECTION MAP START ======= -->
+    <section class="s-map">
+        <div class="contacts-wrap">
+            <div class="contacts-block">
+                <!-- contact-item -->
+                <div class="contact-item">
+                    <img src="img/icons/cb-map-icon.png" alt="Адрес" class="contact-item-img">г. Тула, ул. Некрасова, д. 7 оф. 404
+                </div>
+                <!-- /contact-item -->
 
-            <div class="ex-tabs" id="ex-tabs">
-                <ul>
-                    <li><a href="#tabs-1">Все работы</a></li>
-                    <li><a href="#tabs-2">Создание сайтов</a></li>
-                    <li><a href="#tabs-3">Продвижение сайтов</a></li>
-                    <li><a href="#tabs-3">Контекстная реклама</a></li>
-                    <li><a href="#tabs-3">SMM</a></li>
-                    <li><a href="#tabs-3">Внедрение битрикс24</a></li>
-                </ul>
-                <div id="tabs-1" class="tab-content">
-                    <div class="ex-wrap">
-                        <!-- example-item -->
-                        <div class="ex-item" style="background-image: url('img/ex-img-1.jpg');">
-                            <a href="#0" class="ex-item-link">
-                                <span class="ex-item-name">Электромонтаж</span>
-                                <span class="ex-item-desc">Landing-page</span>
-                            </a>
-                        </div>
-                        <!-- /example-item -->
+                <!-- contact-item -->
+                <div class="contact-item">
+                    <img src="img/icons/cb-phone-icon.png" alt="Телефон" class="contact-item-img"><a href="tel:+74872515083">+7 (487) 251-50-83</a>
+                </div>
+                <!-- /contact-item -->
 
-                        <!-- example-item -->
-                        <div class="ex-item" style="background-image: url('img/ex-img-2.jpg');">
-                            <a href="#0" class="ex-item-link">
-                                <span class="ex-item-name">Холодильное оборудование</span>
-                                <span class="ex-item-desc">Landing-page</span>
-                            </a>
-                        </div>
-                        <!-- /example-item -->
+                <!-- contact-item -->
+                <div class="contact-item">
+                    <img src="img/icons/cb-email-icon.png" alt="Email" class="contact-item-img"><a href="mailto:manager@artean.ru">manager@artean.ru</a>
+                </div>
+                <!-- /contact-item -->
 
-                        <!-- example-item -->
-                        <div class="ex-item" style="background-image: url('img/ex-img-3.jpg');">
-                            <a href="#0" class="ex-item-link">
-                                <span class="ex-item-name">Стенды для выставок и экспозиций</span>
-                                <span class="ex-item-desc">Стенды для выставок и экспозиций</span>
-                            </a>
-                        </div>
-                        <!-- /example-item -->
+                <!-- contact-item -->
+                <div class="contact-item">
+                    <img src="img/icons/cb-skype-icon.png" alt="alt" class="contact-item-img">worktexts
+                </div>
+                <!-- /contact-item -->
 
-                        <!-- example-item -->
-                        <div class="ex-item" style="background-image: url('img/ex-img-4.jpg');">
-                            <a href="#0" class="ex-item-link">
-                                <span class="ex-item-name">Электромонтаж</span>
-                                <span class="ex-item-desc">Landing-page</span>
-                            </a>
-                        </div>
-                        <!-- /example-item -->
+                <!-- contact-item -->
+                <div class="contact-item">
+                    <img src="img/icons/cb-vk-icon.png" alt="alt" class="contact-item-img"><a href="https://vk.com/digitalartean" target="_blank">https://vk.com/digitalartean</a>
+                </div>
+                <!-- /contact-item -->
 
-                        <!-- example-item -->
-                        <div class="ex-item" style="background-image: url('img/ex-img-5.jpg');">
-                            <a href="#0" class="ex-item-link">
-                                <span class="ex-item-name">Электромонтаж</span>
-                                <span class="ex-item-desc">Landing-page</span>
-                            </a>
-                        </div>
-                        <!-- /example-item -->
+                <!-- contact-item -->
+                <div class="contact-item"><img src="img/icons/cb-tg-icon.png" alt="alt" class="contact-item-img"><img src="img/icons/cb-viber-icon.png" alt="alt" class="contact-item-img"><img src="img/icons/cb-whats-icon.png" alt="alt" class="contact-item-img"><a href="tel:+79539739698">+7 953 973 96 98</a>
+                </div>
+                <!-- /contact-item -->
+            </div>
 
-                        <!-- example-item -->
-                        <div class="ex-item" style="background-image: url('img/ex-img-6.jpg');">
-                            <a href="#0" class="ex-item-link">
-                                <span class="ex-item-name">Электромонтаж</span>
-                                <span class="ex-item-desc">Landing-page</span>
-                            </a>
-                        </div>
-                        <!-- /example-item -->
+            <form class="contact-form">
 
-                        <!-- example-item -->
-                        <div class="ex-item" style="background-image: url('img/ex-img-7.jpg');">
-                            <a href="#0" class="ex-item-link">
-                                <span class="ex-item-name">Электромонтаж</span>
-                                <span class="ex-item-desc">Landing-page</span>
-                            </a>
-                        </div>
-                        <!-- /example-item -->
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="Artean">
+                <input type="hidden" name="admin_email" value="alexey.kobilianskiy@gmail.com">
+                <input type="hidden" name="form_subject" value="Заявка с сайта artean">
+                <!-- END Hidden Required Fields -->
 
-                        <!-- example-item -->
-                        <div class="ex-item" style="background-image: url('img/ex-img-8.jpg');">
-                            <a href="#0" class="ex-item-link">
-                                <span class="ex-item-name">Электромонтаж</span>
-                                <span class="ex-item-desc">Landing-page</span>
-                            </a>
-                        </div>
-                        <!-- /example-item -->
+                <div class="form-content">
 
-                        <!-- example-item -->
-                        <div class="ex-item" style="background-image: url('img/ex-img-9.jpg');">
-                            <a href="#0" class="ex-item-link">
-                                <span class="ex-item-name">Электромонтаж</span>
-                                <span class="ex-item-desc">Landing-page</span>
-                            </a>
-                        </div>
-                        <!-- /example-item -->
+                    <h3>Выберите удобный способ связи</h3>
+
+                    <label>
+                        <select name="Контакт" class="contacts-select">
+                            <option value="Телефон" data-icon="../img/icons/c-phone-icon.png" data-ph="Оставьте свой номер" class="c-phone">Телефон</option>
+                            <option value="Вконтакте" data-icon="../img/icons/c-vk-icon.png" data-ph="Оставьте свою страницу" class="c-vk">Вконтакте</option>
+                            <option value="Почта" data-icon="../img/icons/c-email-icon.png" data-ph="Оставьте свою почту" class="c-email">Почта</option>
+                            <option value="Skype" data-icon="../img/icons/c-skype-icon.png" data-ph="Оставьте свой Skype" class="c-skype">Skype</option>
+                            <option value="Whatsapp" data-icon="../img/icons/c-whats-icon.png" data-ph="Оставьте свой номер" class="c-whats">Whatsapp</option>
+                            <option value="Viber" data-icon="../img/icons/c-viber-icon.png" data-ph="Оставьте свой номер" class="c-viber">Viber</option>
+                            <option value="Телеграмм" data-icon="../img/icons/c-tg-icon.png" data-ph="Оставьте свой Телеграмм" class="c-tg">Телеграмм</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        <input type="text" data-validation="required" name="Данные" placeholder="Оставьте свой номер" autocomplete="off" class="data-input">
+                    </label>
+
+                    <div class="privacy">Нажимая кнопку "ОТПРАВИТЬ" я даю согласие на обработку персональных данных</div>
+
+                    <div class="btn-wrap">
+                        <button type="submit" class="btn btn-white btn-middle">Отправить</button>
                     </div>
                 </div>
-                <div id="tabs-2" class="tab-content">
-                    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
-                </div>
-                <div id="tabs-3" class="tab-content">
-                    <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-                    <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
-                </div>
-            </div>
-            <div class="btn-wrap">
-                <a href="#0" class="btn btn-red btn-middle show-next">Смотреть следующие</a>
-            </div>
+            </form>
         </div>
+        <div id="map" data-att="54.806889" data-long="56.081515" data-zoom="16" data-marker="img/icons/map-marker.png"></div>
+
     </section>
-    <!-- ======= SECTION EXAMPLES END ======= -->
+    <!-- ======= SECTION MAP END ======= -->
 
-    <!-- ======= SECTION PREFOOTER START ======= -->
-    <section class="s-prefooter">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <h2 class="section-title">Решим Ваши задачи - профессионально</h2>
-                    <div class="contacts-block">
-                        <!-- contact-item -->
-                        <div class="contact-item">
-                            <img src="img/icons/cb-map-icon.png" alt="Адрес" class="contact-item-img">г. Тула, ул. Некрасова, д. 7 оф. 404
-                        </div>
-                        <!-- /contact-item -->
 
-                        <!-- contact-item -->
-                        <div class="contact-item">
-                            <img src="img/icons/cb-phone-icon.png" alt="Телефон" class="contact-item-img"><a href="tel:+74872515083">+7 (487) 251-50-83</a>
-                        </div>
-                        <!-- /contact-item -->
 
-                        <!-- contact-item -->
-                        <div class="contact-item">
-                            <img src="img/icons/cb-email-icon.png" alt="Email" class="contact-item-img"><a href="mailto:manager@artean.ru">manager@artean.ru</a>
-                        </div>
-                        <!-- /contact-item -->
 
-                        <!-- contact-item -->
-                        <div class="contact-item">
-                            <img src="img/icons/cb-skype-icon.png" alt="alt" class="contact-item-img">worktexts
-                        </div>
-                        <!-- /contact-item -->
 
-                        <!-- contact-item -->
-                        <div class="contact-item">
-                            <img src="img/icons/cb-vk-icon.png" alt="alt" class="contact-item-img"><a href="https://vk.com/digitalartean" target="_blank">https://vk.com/digitalartean</a>
-                        </div>
-                        <!-- /contact-item -->
 
-                        <!-- contact-item -->
-                        <div class="contact-item"><img src="img/icons/cb-tg-icon.png" alt="alt" class="contact-item-img"><img src="img/icons/cb-viber-icon.png" alt="alt" class="contact-item-img"><img src="img/icons/cb-whats-icon.png" alt="alt" class="contact-item-img"><a href="tel:+79539739698">+7 953 973 96 98</a>
-                        </div>
-                        <!-- /contact-item -->
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <img src="img/prefooter-img.png" alt="alt" class="prefooter-img img-responsive">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ======= SECTION PREFOOTER END ======= -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- ======= FOOTER START ======= -->
     <footer class="main-foot">
-        <div class="footer-top">
+        <div class="footer-top" style="display: none">
             <div class="container">
                 <form class="contact-form">
 
@@ -595,32 +563,11 @@
 </div>
 <!-- ======= END HTML FOR PHOTOSWIPE ======= -->
 
+<!-- only for page-contacts.html -->
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<!-- /only for page-contacts.html -->
+
 <script src="js/scripts.min.js"></script>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

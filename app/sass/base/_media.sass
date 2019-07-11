@@ -56,10 +56,20 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .s-map
+    .contacts-wrap
+      width: 50%
+      right: 0
+      padding-left: 50px
+      padding-right: 50px
+
   .s-intro-cases
     min-height: auto
     background-image: url('../img/bg-intro-cases-m.png')
     justify-content: center
+    text-align: center
+
+  .s-intro-contacts
     text-align: center
 
   .s-result-mobile
@@ -262,10 +272,26 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .s-map
+    .contacts-wrap
+      position: relative
+      width: 100%
+      .contacts-block, form
+        width: 280px
+        margin-left: auto
+        margin-right: auto
+
+  #map
+    height: 400px
+
   .s-intro-cases
     height: 500px
     h1
       font-size: 100px
+
+  .s-intro-contacts
+    h1
+      font-size: 80px
 
   .intro-case-img
     display: none
@@ -343,6 +369,11 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .s-map
+    .contacts-wrap
+      padding-left: 10px
+      padding-right: 10px
+
   .s-examples
     padding-top: 40px
     .section-title
@@ -352,6 +383,11 @@
     height: 400px
     h1
       font-size: 70px
+
+  .s-intro-contacts
+    height: 400px
+    h1
+      font-size: 54px
 
   .color-item, .color-item svg
     width: 80px
