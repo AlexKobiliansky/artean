@@ -209,7 +209,9 @@ $(document).ready(function(){
     });
     heightses();
 
-    $("a.btn-down").mPageScroll2id();
+    $("a.btn-down").mPageScroll2id({
+        offset:65
+    });
 
     /**
      * FROMS
