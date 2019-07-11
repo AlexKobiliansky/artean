@@ -56,6 +56,23 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .chron-item, .chron-item:nth-child(2n)
+    flex-direction: column
+  .chron-item-img
+      img
+        margin-left: auto
+        margin-right: auto
+        margin-bottom: 50px
+  .chron-item-content
+    width: 100%
+
+  .s-sertificates
+    padding: 40px 0
+    .section-title
+      text-align: center
+      margin-top: 0
+      margin-bottom: 20px
+
   .s-intro-about
     min-height: auto
     background-image: url('../img/bg-intro-cases-m.png')
@@ -378,6 +395,32 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .chron-item
+    margin-bottom: 60px
+    &-img
+      img
+        margin-bottom: 25px
+  &-content
+    font-size: 20px
+
+  .ul-custom
+    font-size: 16px
+    li
+      &:before
+        top: 2px
+      &:after
+        top: 5px
+
+  .sert-item
+    width: 100%
+    margin-left: 10px
+    margin-right: 10px
+    margin-bottom: 0
+    &:nth-child(3n+1)
+      margin-left: 10px
+    &:nth-child(3n)
+      margin-right: 10px
 
   .s-intro-about
     h1

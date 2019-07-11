@@ -196,6 +196,7 @@ $(document).ready(function(){
 
     $('.result-img').photoswipe();
     $('.inner-pages').photoswipe();
+    $('.sert-item').photoswipe();
 
 
     function heightses() {
