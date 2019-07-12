@@ -30,7 +30,7 @@
       top: auto
       bottom: 80px
       button.owl-prev, button.owl-next
-        opacity: .6 
+        opacity: .6
 
   .s-intro-case
     height: 790px
@@ -62,6 +62,43 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .dev-wrap
+    margin-top: 40px
+    .section-title
+      text-align: center
+      width: 100%
+
+  .s-chars
+    padding-top: 60px
+    padding-bottom: 40px
+    .section-title
+      text-align: center
+
+  .chars-wrap
+    color: $accent-violet
+    text-align: center
+    margin-top: 30px
+    padding-left: 0
+    &:before
+      display: none
+
+  .chars-title
+    margin-bottom: 25px
+
+  .chars-list
+    line-height: 1.4
+    span
+      position: relative
+      display: block
+      left: 0
+      margin-right: 10px
+      top: 0
+    li
+      margin-bottom: 20px
+      padding-left: 0
+
+
 
   .service-slide
     position: relative
@@ -320,9 +357,12 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .dev-wrap
+    padding-left: 30px
+    padding-right: 30px
+
   .s-intro-about
     height: 500px
-
 
   .s-map
     .contacts-wrap
@@ -420,6 +460,19 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .dev-wrap
+    .ul-custom
+      li
+        width: 100%
+        &:nth-child(2n+1)
+          padding-right: 0
+
+  .s-chars
+    padding-bottom: 40px
+
+  .chars-title
+    font-size: 26px
 
   .service-slide
     background-position: center center
