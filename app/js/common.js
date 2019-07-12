@@ -240,7 +240,28 @@ $(document).ready(function(){
                 autoHeight: false
             }
         }
+    });
 
+    var swiper = new Swiper('.tars-slider', {
+        slidesPerView: 3,
+        spaceBetween: 60,
+        speed: 500,
+        scrollbar: {
+            el: '.swiper-scrollbar',
+            draggable: true
+        },
+        breakpoints: {
+            480: {
+                autoHeight: true,
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 1,
+            },
+            992: {
+                slidesPerView: 2,
+            }
+        }
     });
 
     /**
@@ -251,6 +272,11 @@ $(document).ready(function(){
         if ($(window).width()>992) {
             $('.blog-item-title').height('auto').equalHeights();
             $('.proc-item').height('auto').equalHeights();
+        }
+
+        if ($(window).width()>480) {
+            $('.tar-item-content ul').height('auto').equalHeights();
+            $('.tar-item-title').height('auto').equalHeights();
         }
 
         if ($(window).width()>480) {

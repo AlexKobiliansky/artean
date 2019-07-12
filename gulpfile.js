@@ -53,6 +53,7 @@ gulp.task('scripts', function() {
 		'app/libs/owl-carousel/owl.carousel.min.js',
 		'app/libs/owl-carousel/owl.carousel2.thumbs.min.js',
 		'app/libs/matchHeight/jquery.matchHeight-min.js',
+		'app/libs/swiper/swiper.min.jsx',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
