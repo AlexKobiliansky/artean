@@ -63,6 +63,27 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .proc-slider
+    border-left: 1px solid #e8e8e8
+
+  .proc-item
+    flex-direction: column
+    &-title
+      width: 100%
+      padding-left: 50px
+      background-image: none
+      color: $accent-violet
+      border: 1px solid #e8e8e8
+      border-bottom: none
+      border-left: none
+      padding-right: 103px
+    &-desc
+      width: 100%
+      border-top: none
+      border-left: none
+      padding-left: 50px
+      padding-top: 10px
+
   .s-advantages
     padding-top: 40px
     .section-title
@@ -366,6 +387,14 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .s-process
+    padding-top: 40px
+    .section-title
+      margin-bottom: 30px
+
+  .proc-nav
+    margin-bottom: 30px
+
   .dev-wrap
     padding-left: 30px
     padding-right: 30px
@@ -469,6 +498,35 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .proc-nav
+    display: none
+
+  .proc-item
+    &-title
+      font-size: 18px
+      padding-left: 20px
+      padding-right: 50px
+    &-desc
+      padding-left: 20px
+      padding-right: 50px
+    li
+      padding-left: 18px
+      &:before
+        width: 5px
+        height: 5px
+        border-radius: 50%
+
+  .proc-slider
+    &:after
+      width: 46px
+    .owl-nav
+      button.owl-next,  button.owl-prev
+        width: 18px
+        height: 32px
+      button.owl-next
+        right: 14px
+
 
   .adv-item
     width: 100%

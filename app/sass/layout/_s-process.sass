@@ -1,0 +1,104 @@
+.s-process
+  padding-top: 80px
+  padding-bottom: 20px
+  .section-title
+    margin-bottom: 60px
+
+.proc-item
+  display: flex
+  position: relative
+  &-title
+    width: 32%
+    background-image: url('../img/bg-proc-item.jpg')
+    +bg-cover
+    padding: 20px
+    display: flex
+    align-items: center
+    font-size: 24px
+    line-height: 1.3
+    color: #fff
+    font-weight: 700
+  &-desc
+    width: 68%
+    padding: 30px 103px 30px 90px
+    border: 1px solid #e8e8e8
+    display: flex
+    align-items: center
+    li
+      position: relative
+      padding-left: 40px
+      margin-bottom: 15px
+      &:before
+        content: ''
+        position: absolute
+        height: 2px
+        width: 18px
+        background-color: $accent-violet
+        left: 0
+        top: 10px
+
+
+.proc-slider
+  position: relative
+  .owl-nav
+    position: absolute
+    width: 100%
+    left: 0
+    top: calc(50% - 24px)
+    z-index: 3
+    button.owl-prev, button.owl-next
+      position: absolute
+      width: 27px
+      height: 48px
+      +bg-cover
+      background-image: url('../img/icons/serv-sl-arr.png')
+      cursor: pointer
+      +mt(.3s)
+      opacity: .8
+      &:hover
+        opacity: 1
+    button.owl-prev
+      left: 40px
+      transform: rotate(180deg)
+      display: none
+    button.owl-next
+      right: 22px
+  &:after
+    content: ''
+    position: absolute
+    width: 73px
+    height: 100%
+    right: 0
+    top: 0
+    z-index: 2
+    background-color: $accent-violet
+
+.proc-nav
+  margin-bottom: 60px
+
+.proc-nav-item
+  display: inline-block
+  font-weight: bold
+  color: $accent-red
+  cursor: pointer
+  position: relative
+  margin-right: 48px
+  +mt(.3s)
+  text-transform: uppercase
+  margin-bottom: 10px
+  .svg
+    width: 10px
+    height: 18px
+    +mt(.3s)
+    fill: $accent-red
+    position: absolute
+    top: 3px
+    right: -30px
+  &:last-child
+    .svg
+      display: none
+  &:hover, &.active
+    color: $accent-violet
+    .svg
+      fill: $accent-violet
+
