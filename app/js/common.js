@@ -203,6 +203,10 @@ $(document).ready(function(){
         if ($(window).width()>992) {
             $('.blog-item-title').height('auto').equalHeights();
         }
+
+        if ($(window).width()>480) {
+            $('.adv-item-title').height('auto').matchHeight();
+        }
     }
 
     $(window).resize(function() {
