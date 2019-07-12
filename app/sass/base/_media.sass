@@ -63,6 +63,9 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .serlist-item
+    width: 50%
+
   .s-costs
     padding-bottom: 20px
     .section-title
@@ -192,6 +195,11 @@
       right: 0
       padding-left: 50px
       padding-right: 50px
+
+  .s-intro-services
+    min-height: auto
+    height: 500px
+
 
   .s-intro-cases
     min-height: auto
@@ -402,6 +410,29 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .s-servicelist
+    padding-top: 40px
+
+  .serlist-item
+    width: 100%
+    padding: 0
+    margin-bottom: 40px
+    text-align: center
+
+  .s-intro-services
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      left: 0
+      right: 0
+      top: 0
+      bottom: 0
+      background-color: rgba(#000, .4)
+    h1
+      position: relative
+      z-index: 2
+      font-size: 100px
   .s-process
     padding-top: 40px
     .section-title
@@ -513,6 +544,13 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-intro-services
+    justify-content: center
+    text-align: center
+    height: 400px
+    h1
+      font-size: 50px
 
   .cost-item-desc
     span
